@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="topnav">
+    <div id="topnav" class="topnav">
 
         <a id="menu" onclick="showMenu()">
             <div>
@@ -66,37 +66,37 @@
                     </p>
             <div class="containerA">
                 <div class="polaroid"> <!-- Por algún motivo si no pongo un <p> dentro del container la configuración-->
-                    <a><img src="imagenes/activa.jpg"></a> <!--de las imagenes se desmorona-->
+                    <a href="#act"><img src="imagenes/activa.jpg"></a> <!--de las imagenes se desmorona-->
                     <div id="C1" class="container">
                         <h3>Activa</h3>
-                        <p id="P1">
+                        <p>
                             Lorem
                         </p>
                     </div>
                 </div>
                 <div class="polaroid">
-                    <a><img src="imagenes/pasiva.jpg"></a>
+                    <a href="#pas"><img src="imagenes/pasiva.jpg"></a>
                     <div id="C2" class="container">
                         <h3>Pasiva</h3>
-                        <p id="P2">
+                        <p>
                             Lorem
                         </p>
                     </div>
                 </div>
                 <div class="polaroid">
-                    <a><img src="imagenes/optica.jpg"></a>
+                    <a href="#opt"><img src="imagenes/optica.jpg"></a>
                     <div id="C2" class="container">
                         <h3>Óptica</h3>
-                        <p id="P2">
+                        <p>
                             Lorem
                         </p>
                     </div>
                 </div>
-                <div class="polaroid">
-                    <a><img src="imagenes/acustica.jpg"></a>
+                <a><div class="polaroid">
+                    <a href="#acu"><img src="imagenes/acustica.jpg"></a>
                     <div id="C2" class="container">
                         <h3>Acústica</h3>
-                        <p id="P2">
+                        <p>
                             Lorem
                         </p>
                     </div>
@@ -109,21 +109,21 @@
             <h1 class="Subtittle">Funcionamiento</h1>
             <div class="textoColumna">
                 <p>
-                    <b>Pasiva</b><br>
+                    <b id="pas">Pasiva</b><br>
                    Las tabletas pasivas hacen uso de la inducción electromagnético, donde la malla de alambres horizontal y vertical de la tableta funciona como receptor y transmisor. La tableta genera una señal electromagnética que es recibida por el estilete. La malla de alambres cambia de señal y pasa a funcionar como un receptor, leyendo la señal generada por el estilete. <br>
                    Gracias a la señal electromagnética, la tableta es capaz de sentir la posición del estilete sin tener que tocar la superficie de la tableta, y usar esta señal para alimentar al estilete significa que el estilete no necesita baterías. 
 
                 </p>
                 <p>
-                    <b>Activa</b><br>
+                    <b id="act">Activa</b><br>
                     El estilete tiene componentes electrónicos que generan y transmiten señales a la tableta. Estos estiletes requieren del uso de baterías en lugar de usar la tableta como fuente de energía. La ventaja de este tipo es que al ser el estilete el que manda la señal con su propia energía la tableta puede centrarse en recibir, provocando que consiga lo posición de manera continua en lugar de intermitente.
                 </p>
                 <p>
-                    <b>Óptica</b><br>
+                    <b id="opt">Óptica</b><br>
                     Funcionan con una cámara digital muy pequeña colocada en la punta del estilete, la cámara manda imágenes y luego el software de la tableta se encarga de comparar la imagen de la nueva posición con la antigua para ver como se ha movido. 
                 </p>
                 <p>
-                    <b>Acústica</b><br>
+                    <b id="acu">Acústica</b><br>
                     Un pequeño generador de sonido se monta en el estilete, y la señal acústica es recibida por dos micrófonos colocados cerca de la superficie de escritura. Algunos diseños modernos pueden leer posiciones en tres dimensiones.
                 </p>
             </div>
@@ -133,44 +133,30 @@
             style="background-color: rgba(240, 240, 240, 0.486); box-shadow: 10px 10px 10px 40px rgb(245, 245, 245);">
 
             <h1 class="Subtittle">Instalación</h1>
-            <p class="textoSeccion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro nulla
-                illum
-                ex animi quia quo blanditiis itaque obcaecati nesciunt commodi aut consectetur voluptatum, neque
-                voluptates vero quod facilis exercitationem?<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita ullam, autem unde rem
-                maiores, aut corrupti officia minima libero fuga nihil laudantium
-                obcaecati enim aliquid. Distinctio dolorum laborum dolorem! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.<br>
-                Iusto nam, tempore aspernatur assumenda consequuntur quas beatae dolorem magnam
-                reiciendis autem ut dicta provident et totam obcaecati, numquam laboriosam error ipsum.</p>
+            <p class="textoSeccion">
+                La instalación de una tableta gráfica es muy simple.<br>
+                Una vez conectada la tableta nos dirigimos a la página web de la misma y nos descargamos 
+                o los últimos controladores en algunos modelos o un programa de ayuda de instalación.<br>
+            </p>
 
         </section>
         <section id="sec5">
 
             <h1 class="Subtittle">Marcas</h1>
-            <p class="textoSeccion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro nulla
-                illum
-                ex animi quia quo blanditiis itaque obcaecati nesciunt commodi aut consectetur voluptatum, neque
-                voluptates vero quod facilis exercitationem?<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita ullam, autem unde rem
-                maiores, aut corrupti officia minima libero fuga nihil laudantium
-                obcaecati enim aliquid. Distinctio dolorum laborum dolorem! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.<br>
-                Wacom, HUION</p>
+            <p class="textoSeccion">
+                    Las dos principales marcas de tabletas gráficas son Wacom y HUION. 
+            </p>
+            <div style="height: 300px;">
+            <a href="https://www.wacom.com/" target="_blank"><img class="logo" src="imagenes/wacom.jpg" alt="Wacom_logo"></a>
+            <a href="https://www.huiontablet.com/" target="_blank"><img class="logo" src="imagenes/huion.jpg" alt="HUION_logo"></a>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="textoColumna">
-            <p style="font-size: 13px;margin: 5px;">
+            <p>
                 Contactos:<br>
-                Tlf: 669 34 58 32<br>
                 Email: ivan.torres@iescampanillas.com
             </p>
-            <p style="font-size: 13px;float: right;">
-                Hecha por:<br>
-                Iván Torres de Oses
-            </p>
-        </div>
     </footer>
 
 </body>

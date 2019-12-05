@@ -22,6 +22,7 @@ html {
     top: 0;
     z-index: 100;
     width: 100%;
+    transition: top 0.7s;
 }
 .topnav a {
     
@@ -93,19 +94,19 @@ header h1 {
 /* Para el footer */
 footer {
 
-    background-color: rgb(112, 112, 112);
-}
-footer h1 {
-
-    font-size: 20px;
-    color: rgb(168, 168, 168);
+    height: 100px;
+    background-color: rgb(49, 49, 49);
 }
 footer p {
 
-    font-size: 10px;
+    font-size: 13px;
     color: rgb(168, 168, 168);
+    width: 15%;
+    margin-left: 5px;
+    float: left;
+    padding: 10px;
 }
-/* Para las imagenes de fondo */
+/* Para las imagenes*/
 .BackImg{
 
     position: absolute;    
@@ -120,7 +121,12 @@ footer p {
     height: 600px;
     
 }
+.logo {
 
+    float: left;
+    width: 250px;
+    margin-left: 20%;
+}
 /* Distintas maneras de presentar el texto */
 .textoSeccion {
 
@@ -315,6 +321,10 @@ div.container p {
         width: 80%;
         margin-left: 10%;
     }
+    .logo {
+
+        width: 190px;
+    }
 }
 @media only screen and (max-width: 250px) {
 
@@ -330,5 +340,9 @@ div.container p {
         top:  1%;
         font-size: 30px;
         height: 60px;
+    }
+    .logo {
+
+        width: 130px;
     }
 }

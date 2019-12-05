@@ -47,3 +47,15 @@ $(window).resize(function () { //Esto se usa para que cuando se cambie el tamañ
         elem.style.display = "none";
     }
 });
+
+//Función para que se esconda la barra de navegación se esconda cuando el usuario no haga un scroll hacia arriba
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("topnav").style.top = "0";
+  } else {
+    document.getElementById("topnav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
